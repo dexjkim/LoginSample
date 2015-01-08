@@ -24,7 +24,7 @@ static NSString * const kClientId = @"602903741806-29gc29qh8caufee26c1hb6csvkumk
 
 @interface ViewController () <FBLoginViewDelegate, GPPSignInDelegate>
 
-@property (weak, nonatomic) IBOutlet UILabel *labelLogin;
+@property (weak, nonatomic) IBOutlet FBProfilePictureView *profileImageView;
 @property (weak, nonatomic) IBOutlet FBLoginView *fbLoginButton;
 @property (weak, nonatomic) IBOutlet GPPSignInButton *gppLoginButton;
 @property (weak, nonatomic) IBOutlet TWTRLogInButton *twLoginButton;
@@ -54,7 +54,6 @@ static NSString * const kClientId = @"602903741806-29gc29qh8caufee26c1hb6csvkumk
 
 #pragma mark - Class Functions
 - (void)needLoginButtons:(BOOL)shouldShow {
-    self.labelLogin.hidden = !shouldShow;
     self.fbLoginButton.hidden = !shouldShow;
     self.gppLoginButton.hidden = !shouldShow;
     self.twLoginButton.hidden = !shouldShow;
@@ -136,7 +135,7 @@ static NSString * const kClientId = @"602903741806-29gc29qh8caufee26c1hb6csvkumk
 
 #pragma mark - FBLoginViewDelegate
 - (void)loginViewFetchedUserInfo:(FBLoginView *)loginView user:(id<FBGraphUser>)user {
-    
+    self.profileImageView.profileID = [user objectID];
 }
 
 - (void)loginViewShowingLoggedInUser:(FBLoginView *)loginView {
