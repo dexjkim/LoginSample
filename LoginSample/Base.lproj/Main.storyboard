@@ -29,49 +29,18 @@
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="8EA-zq-LEQ"/>
                                         <exclude reference="6wU-Oi-D8x"/>
+                                        <exclude reference="8EA-zq-LEQ"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="167" y="60" width="266" height="58"/>
+                                <variation key="heightClass=regular">
                                     <mask key="constraints">
-                                        <include reference="8EA-zq-LEQ"/>
                                         <include reference="6wU-Oi-D8x"/>
+                                        <include reference="8EA-zq-LEQ"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="267" y="124" width="266" height="68"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please login by means below." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lyc-jZ-a3o">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="58" id="Krl-CE-u5R">
-                                        <variation key="heightClass=regular" constant="40"/>
-                                    </constraint>
-                                    <constraint firstAttribute="width" constant="303" id="b8c-HQ-kLi">
-                                        <variation key="heightClass=regular" constant="250"/>
-                                    </constraint>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Krl-CE-u5R"/>
-                                        <exclude reference="b8c-HQ-kLi"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="185" y="148" width="233" height="23"/>
-                                    <mask key="constraints">
-                                        <include reference="Krl-CE-u5R"/>
-                                        <include reference="b8c-HQ-kLi"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="249" y="311" width="303" height="58"/>
                                 </variation>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VVX-oE-JH9" customClass="FBLoginView">
@@ -167,6 +136,26 @@
                                     <rect key="frame" x="249" y="636" width="303" height="45"/>
                                 </variation>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gxq-eu-FHA" customClass="FBProfilePictureView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="FPw-Gl-ODx"/>
+                                    <constraint firstAttribute="width" constant="150" id="hHH-os-XMq"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="FPw-Gl-ODx"/>
+                                        <exclude reference="hHH-os-XMq"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="FPw-Gl-ODx"/>
+                                        <include reference="hHH-os-XMq"/>
+                                    </mask>
+                                </variation>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -182,63 +171,63 @@
                             <constraint firstItem="VVX-oE-JH9" firstAttribute="top" secondItem="d8W-Rx-8nC" secondAttribute="bottom" constant="8" id="Uqn-hp-reY"/>
                             <constraint firstAttribute="centerX" secondItem="d8W-Rx-8nC" secondAttribute="centerX" constant="-1" id="VFL-2b-xQE"/>
                             <constraint firstItem="q0l-Qu-3bt" firstAttribute="top" secondItem="n8Z-pI-ajT" secondAttribute="bottom" constant="45" id="b5D-Ql-IQD"/>
-                            <constraint firstAttribute="centerX" secondItem="Lyc-jZ-a3o" secondAttribute="centerX" constant="-0.5" id="byt-Q5-yh1"/>
                             <constraint firstAttribute="centerX" secondItem="Q5n-jo-cP3" secondAttribute="centerX" constant="-1" id="ez4-ij-S77"/>
                             <constraint firstItem="n8Z-pI-ajT" firstAttribute="top" secondItem="Q5n-jo-cP3" secondAttribute="bottom" constant="8" id="m8B-x1-IUb"/>
-                            <constraint firstItem="Lyc-jZ-a3o" firstAttribute="top" secondItem="c3d-Yd-02E" secondAttribute="bottom" constant="74" id="tj0-3a-cPL">
+                            <constraint firstItem="gxq-eu-FHA" firstAttribute="top" secondItem="c3d-Yd-02E" secondAttribute="bottom" constant="49" id="qlp-je-r6r">
                                 <variation key="heightClass=regular" constant="30"/>
                             </constraint>
+                            <constraint firstAttribute="centerX" secondItem="gxq-eu-FHA" secondAttribute="centerX" constant="-1" id="rke-zB-Fh7"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="c3d-Yd-02E"/>
-                                <exclude reference="Lyc-jZ-a3o"/>
                                 <exclude reference="VVX-oE-JH9"/>
                                 <exclude reference="n8Z-pI-ajT"/>
                                 <exclude reference="d8W-Rx-8nC"/>
                                 <exclude reference="Q5n-jo-cP3"/>
+                                <exclude reference="gxq-eu-FHA"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="Pyg-sK-ZlD"/>
                                 <exclude reference="TeX-Bc-IyA"/>
-                                <exclude reference="byt-Q5-yh1"/>
-                                <exclude reference="tj0-3a-cPL"/>
+                                <exclude reference="b5D-Ql-IQD"/>
                                 <exclude reference="1qG-gR-8tY"/>
                                 <exclude reference="VFL-2b-xQE"/>
-                                <exclude reference="O41-Zv-dsS"/>
-                                <exclude reference="Uqn-hp-reY"/>
+                                <exclude reference="Iu6-wW-Fat"/>
+                                <exclude reference="m8B-x1-IUb"/>
                                 <exclude reference="95M-9x-fa0"/>
                                 <exclude reference="RfY-mF-YuK"/>
                                 <exclude reference="ez4-ij-S77"/>
-                                <exclude reference="Iu6-wW-Fat"/>
-                                <exclude reference="m8B-x1-IUb"/>
-                                <exclude reference="b5D-Ql-IQD"/>
+                                <exclude reference="O41-Zv-dsS"/>
+                                <exclude reference="Uqn-hp-reY"/>
+                                <exclude reference="qlp-je-r6r"/>
+                                <exclude reference="rke-zB-Fh7"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
                             <mask key="subviews">
                                 <include reference="c3d-Yd-02E"/>
-                                <include reference="Lyc-jZ-a3o"/>
                                 <include reference="VVX-oE-JH9"/>
                                 <include reference="n8Z-pI-ajT"/>
                                 <include reference="d8W-Rx-8nC"/>
                                 <include reference="Q5n-jo-cP3"/>
+                                <include reference="gxq-eu-FHA"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="Pyg-sK-ZlD"/>
                                 <include reference="TeX-Bc-IyA"/>
-                                <include reference="byt-Q5-yh1"/>
-                                <include reference="tj0-3a-cPL"/>
+                                <include reference="b5D-Ql-IQD"/>
                                 <include reference="1qG-gR-8tY"/>
                                 <exclude reference="VFL-2b-xQE"/>
-                                <include reference="O41-Zv-dsS"/>
-                                <include reference="Uqn-hp-reY"/>
+                                <include reference="Iu6-wW-Fat"/>
+                                <include reference="m8B-x1-IUb"/>
                                 <include reference="95M-9x-fa0"/>
                                 <exclude reference="RfY-mF-YuK"/>
                                 <include reference="ez4-ij-S77"/>
-                                <include reference="Iu6-wW-Fat"/>
-                                <include reference="m8B-x1-IUb"/>
-                                <include reference="b5D-Ql-IQD"/>
+                                <include reference="O41-Zv-dsS"/>
+                                <include reference="Uqn-hp-reY"/>
+                                <include reference="qlp-je-r6r"/>
+                                <include reference="rke-zB-Fh7"/>
                             </mask>
                         </variation>
                     </view>
@@ -248,7 +237,7 @@
                         <outlet property="enterButton" destination="d8W-Rx-8nC" id="tNa-GJ-SnJ"/>
                         <outlet property="fbLoginButton" destination="VVX-oE-JH9" id="pha-Ky-8w6"/>
                         <outlet property="gppLoginButton" destination="Q5n-jo-cP3" id="BXV-RB-ebY"/>
-                        <outlet property="labelLogin" destination="Lyc-jZ-a3o" id="DAB-c6-DkM"/>
+                        <outlet property="profileImageView" destination="gxq-eu-FHA" id="xga-jO-bvy"/>
                         <outlet property="twLoginButton" destination="n8Z-pI-ajT" id="GPE-Oi-noM"/>
                     </connections>
                 </viewController>
