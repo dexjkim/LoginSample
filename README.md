@@ -12,4 +12,4 @@ LoginSample
 (You need to download Fabric Plugin for Xcode)
 
 - Screen Shots
-![alt tag](https://raw.githubusercontent.com/dexjkim/LoginSample/master/LoginSample/ScreenShots/ScreenShot-1.PNG)
+![alt tag](https://raw.githubusercontent.com/dexjkim/LoginSample/master/ScreenShots/ScreenShot-1.PNG)
